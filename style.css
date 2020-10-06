@@ -19,7 +19,7 @@ body {
 body::before {
     content: '';
     filter: brightness(50%);
-    background-image: url(images/code.jpg) center center;
+    background-image: url(images/code.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
