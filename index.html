@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey | Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <h1 id="title">Software Developer Survey Form</h1>
+            <p id="description">We will like to know more about you and your stack.</p>
+        </header>
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control"
+                    required>
+
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="number" id="number" placeholder="Age" required min="10" max="50"
+                    class="form-control">
+            </div>
+
+            <div class="form-group mt-3">
+                <h2>What kind of Developer are you?</h2>
+                <select name="" id="dropdown" class="form-control">
+                    <option value="1">Frontend Developer</option>
+                    <option value="2">Backend Developer</option>
+                    <option value="3">Fullstack Developer</option>
+                    <option value="ui/ux">UI/UX</option>
+                    <option value="devops">DevOps</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-3">
+                <h2>What level are you?</h2>
+                <fieldset>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="level" id="senior" class="custom-control-input" value=1>
+                        <label for="senior" class="custom-control-label">Senior</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="level" id="intermediate" class="custom-control-input" value=2>
+                        <label for="intermediate" class="custom-control-label">Intermediate</label>
+
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="level" id="junior" class="custom-control-input" value=3>
+                        <label for="junior" class="custom-control-label">Junior/Beginner</label>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <h2>Learning Path ?</h2>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="selftaught" value="1">
+                    <label class="custom-control-label" for="selftaught">Self Taught</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="bootcamp/cs" value="2">
+                    <label class="custom-control-label" for="bootcamp/cd">Bootcamp/CS Degree</label>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <h2>State your programming stack.</h2>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Enter your programming Stack"
+                    class="form-control"></textarea>
+            </div>
+            <div class="form-group mt-3">
+                <button id="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
